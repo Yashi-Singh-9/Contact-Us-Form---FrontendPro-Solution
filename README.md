@@ -70,7 +70,11 @@ To modify the form:
 
 ## Screenshots
 
-![Contact Form Screenshot](Screenshot.png) <!-- Update with actual path if hosting image -->
+![Contact Form Screenshot](Screenshot.png) 
+
+## Contributing 
+
+For Contribution please refer [Contributing File](CONTRIBUTING.md)
 
 ## License
 
