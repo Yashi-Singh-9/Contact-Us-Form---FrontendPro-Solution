@@ -31,7 +31,7 @@ To view and interact with this contact form:
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/Yashi-Singh-9/contact-form-frontendpro.git
+   git clone https://gitlab.com/Yashi-Singh-9/contact-us-form-frontendpro.git
    ```
 
 2. **Navigate to the project directory**:
