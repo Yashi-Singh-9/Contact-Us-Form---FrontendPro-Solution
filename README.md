@@ -31,12 +31,12 @@ To view and interact with this contact form:
 
 1. **Clone this repository**:
    ```bash
-   git clone https://gitlab.com/Yashi-Singh-9/contact-us-form-frontendpro.git
+   git clone https://github.com/Yashi-Singh-9/Contact-Us-Form---FrontendPro-Solution.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd contact-form-frontendpro
+   cd Contact-Us-Form---FrontendPro-Solution
    ```
 
 3. **Open `index.html`** in a web browser to view the contact form.
