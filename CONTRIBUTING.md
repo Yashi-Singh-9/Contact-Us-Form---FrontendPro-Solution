@@ -29,7 +29,7 @@ To start contributing:
 1. **Fork the Repository**: Create a copy of this repository on your GitLab account by forking it.
 2. **Clone the Fork**: Clone your forked repository to your local machine.
    ```bash
-   git clone https://gitlab.com/YOUR-USERNAME/contact-form-frontendpro.git
+   git clone Contact-Us-Form---FrontendPro-Solution.git
    ```
 3. **Create a Branch**: It's best to create a separate branch for each contribution.
    ```bash
