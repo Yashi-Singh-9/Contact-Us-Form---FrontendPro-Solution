@@ -1,7 +1,3 @@
-Here is an updated **README.md** file for your project that incorporates the use of SCSS and includes instructions on installing and running SCSS:
-
----
-
 # Contact Form - FrontendPro Solution  
 
 This is a **responsive contact form** built with HTML, SCSS, and JavaScript. It was created as a coding challenge on [FrontendPro](https://www.frontendpro.dev/frontend-coding-challenges/contact-us-form-uE4XYJicVTKtJp7FS4HX) and demonstrates a clean, user-friendly design with client-side form validation.
