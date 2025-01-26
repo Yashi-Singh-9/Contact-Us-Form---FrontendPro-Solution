@@ -1,90 +1,123 @@
-# Contact Form - FrontendPro Solution
+Here is an updated **README.md** file for your project that incorporates the use of SCSS and includes instructions on installing and running SCSS:
 
-This is a **responsive contact form** built with HTML, CSS, and JavaScript. It was created as a coding challenge on [FrontendPro](https://www.frontendpro.dev/frontend-coding-challenges/contact-us-form-uE4XYJicVTKtJp7FS4HX) and demonstrates a clean, user-friendly design with client-side form validation.
+---
 
-## Features
+# Contact Form - FrontendPro Solution  
 
-- **Responsive Layout**: Adapts to different screen sizes.
-- **Modern UI**: Styled with smooth gradients and rounded borders for a modern look.
-- **Client-Side Validation**: JavaScript validation for fields like Name, Email, Subject, and Message.
-- **Success & Error Messages**: Displays feedback to users on successful submission or validation errors.
+This is a **responsive contact form** built with HTML, SCSS, and JavaScript. It was created as a coding challenge on [FrontendPro](https://www.frontendpro.dev/frontend-coding-challenges/contact-us-form-uE4XYJicVTKtJp7FS4HX) and demonstrates a clean, user-friendly design with client-side form validation.
 
-## Technologies Used
+## Features  
 
-- **HTML5**: Structure and form elements.
-- **CSS3**: Styling with Flexbox, responsive design, gradients, and media queries.
-- **JavaScript**: Form validation and feedback messages.
+- **Responsive Layout**: Adapts to different screen sizes.  
+- **Modern UI**: Styled with SCSS for better modularity, smooth gradients, and rounded borders for a modern look.  
+- **Client-Side Validation**: JavaScript validation for fields like Name, Email, Subject, and Message.  
+- **Success & Error Messages**: Displays feedback to users on successful submission or validation errors.  
 
-## Project Structure
+## Technologies Used  
 
-```
-project-root/
-├── index.html         # HTML structure of the form
-├── style.css          # Styling for the form and layout
-├── script.js          # JavaScript for form validation and user feedback
-├── README.md          # Project documentation
-```
+- **HTML5**: Structure and form elements.  
+- **SCSS (Sassy CSS)**: Modular and nested styling for better maintainability.  
+- **JavaScript**: Form validation and user feedback.  
 
-## Getting Started
+## Project Structure  
 
-To view and interact with this contact form:
+```plaintext  
+project-root/  
+├── index.html         # HTML structure of the form  
+├── style.scss         # Main SCSS file       
+├── style.css          # Compiled CSS file from SCSS  
+├── style.css.map      # Source map file for style.css  
+├── script.js          # JavaScript for form validation and user feedback  
+├── images/            # Images used in the project  
+│   ├── logo.svg       # Favicon/logo  
+│   ├── Desktop-Design.png  
+│   └── Mobile-Design.png  
+├── README.md          # Project documentation  
+└── .gitignore         # Files and folders to ignore in version control  
+```  
 
-1. **Clone this repository**:
-   ```bash
-   git clone https://github.com/Yashi-Singh-9/Contact-Us-Form---FrontendPro-Solution.git
-   ```
+## Getting Started  
 
-2. **Navigate to the project directory**:
-   ```bash
-   cd Contact-Us-Form---FrontendPro-Solution
-   ```
+To view and interact with this contact form:  
 
-3. **Open `index.html`** in a web browser to view the contact form.
+### 1. Clone the repository  
+```bash  
+git clone https://github.com/Yashi-Singh-9/Contact-Us-Form---FrontendPro-Solution.git  
+```  
 
-## Usage
+### 2. Navigate to the project directory  
+```bash  
+cd Contact-Us-Form---FrontendPro-Solution  
+```  
 
-- Enter your **Name**, **Email Address**, **Subject**, and **Message** in the form fields.
-- Click **Send** to submit the form.
-- If any field is invalid:
-  - An error message will display below the respective field.
-- If all fields are valid:
-  - A success message will display, and the form will reset.
+### 3. Install SCSS (if not already installed)  
+Make sure you have **Node.js** and **npm** installed. Then install SCSS globally using:  
+```bash  
+npm install -g sass  
+```  
 
-## Form Validation Details
+### 4. Compile SCSS to CSS  
+Run the following command to compile SCSS files into CSS:  
+```bash  
+sass scss/style.scss css/style.css  
+```  
 
-The form validates user input as follows:
+Alternatively, you can use the `--watch` flag for continuous compilation during development:  
+```bash  
+sass --watch scss/style.scss:css/style.css  
+```  
 
-- **Name**: Required field. Displays "Name is required" if left empty.
-- **Email**: Required field, must follow a standard email format. Displays "Email is required" or "Please enter a valid email address."
-- **Subject**: Required field. Displays "Subject is required" if left empty.
-- **Message**: Required field. Displays "Message is required" if left empty.
+### 5. Open the project in a browser  
+Open `index.html` in a web browser to view the contact form.  
 
-If all fields pass validation, a success message "Message sent successfully!" is displayed, and the form is reset.
+## Usage  
 
-## Customization
+- Enter your **Name**, **Email Address**, **Subject**, and **Message** in the form fields.  
+- Click **Send** to submit the form.  
+- If any field is invalid:  
+  - An error message will display below the respective field.  
+- If all fields are valid:  
+  - A success message will display, and the form will reset.  
 
-To modify the form:
+## Form Validation Details  
 
-- **Styles**: Edit `style.css` for colors, fonts, and layout changes.
-- **Validation Logic**: Modify `script.js` if you want to add more complex validation or additional fields.
+The form validates user input as follows:  
 
-## Live Demo
+- **Name**: Required field. Displays "Name is required" if left empty.  
+- **Email**: Required field, must follow a standard email format. Displays "Email is required" or "Please enter a valid email address."  
+- **Subject**: Required field. Displays "Subject is required" if left empty.  
+- **Message**: Required field. Displays "Message is required" if left empty.  
 
-Please do watch the live demo of Contact Us Form ;- [https://contact-form-frontendpro.netlify.app/](https://contact-form-frontendpro.netlify.app/)
+If all fields pass validation, a success message "Message sent successfully!" is displayed, and the form is reset.  
 
-## Screenshots
+## Customization  
 
-![Contact Form Screenshot](Screenshot.png) 
+- **Styles**: Modify `scss/style.scss` for colors, fonts, layout, and other design changes.  
+  After making changes, recompile the SCSS into CSS.  
+- **Validation Logic**: Modify `script.js` to add more complex validation or additional fields.  
 
-## Contributing 
+## Live Demo  
 
-For Contribution please refer [Contributing File](CONTRIBUTING.md)
+Check out the live demo here: [https://contact-form-frontendpro.netlify.app/](https://contact-form-frontendpro.netlify.app/)  
 
-## License
+## Screenshots  
 
-This project is open-source and free to use for educational or personal projects. Attribution to the original source (FrontendPro) is appreciated.
+**Desktop Design**  
+![Contact Form Screenshot](images/Desktop-Design.png)  
 
-## Acknowledgments
+**Mobile Design**  
+<img src="images/Mobile-Design.png" height="750">  
 
-- **FrontendPro** for providing the coding challenge inspiration.
-- **Google Fonts** for the Montserrat and Mulish fonts used in this project.
+## Contributing  
+
+For contributions, please refer to the [Contributing File](CONTRIBUTING.md).  
+
+## License  
+
+This project is open-source and free to use for educational or personal projects. Attribution to the original source (FrontendPro) is appreciated.  
+
+## Acknowledgments  
+
+- **FrontendPro** for providing the coding challenge inspiration.  
+- **Google Fonts** for the Montserrat and Mulish fonts used in this project.  
+- **Scss** for simplifying the CSS workflow.  

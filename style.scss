@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background: linear-gradient(to right, #62b2ff, #6e9aff, #7985ff, #7985ff);
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 650px) {
+        height: auto;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 650px) {
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    .form-box {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 607px;
+        color: #202842;
+
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        p {
+            margin: 20px auto;
+            max-width: 540px;
+            width: 100%;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input,
+            textarea {
+                font-family: "Mulish", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                max-width: 380px;
+                width: 100%;
+                padding: 20px;
+                margin: 15px auto;
+                border: 1px solid #ebebf2;
+                border-radius: 5px;
+                outline: none;
+                transition: border-color 0.3s;
+                color: #242e4c;
+
+                &:focus{
+                    border-color: #7985ff;
+                    color: #7985ff;
+                }
+            }
+
+            button {
+                font-family: "Mulish", sans-serif;
+                font-weight: 700;
+                max-width: 380px;
+                width: 100%;
+                padding: 20px;
+                background: linear-gradient(to right, #6cb7ff, #7985ff);
+                color: #fff;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+                margin: 15px auto;
+                
+                &:hover {
+                    background: linear-gradient(135deg, #2575fc, #6a11cb);
+                }
+            }
+
+            .error-message {
+                color: #e74c3c;
+                font-size: 12px;
+                display: block;
+                margin: 0 auto;
+            }
+              
+            .success-message {
+                color: #2ecc71;
+                font-size: 14px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

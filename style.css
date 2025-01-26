@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@400;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +15,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 650px) {
+  body {
+    height: auto;
+  }
+}
 
 .container {
   display: flex;
@@ -24,8 +28,13 @@ body {
   width: 100%;
   height: 100%;
 }
-
-.form-box {
+@media (max-width: 650px) {
+  .container {
+    width: 90%;
+    margin: 25px auto;
+  }
+}
+.container .form-box {
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -34,30 +43,26 @@ body {
   max-width: 607px;
   color: #202842;
 }
-
-.form-box h2 {
+.container .form-box h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 26px;
   margin: 30px 0;
   text-align: center;
 }
-
-.form-box p {
+.container .form-box p {
   margin: 20px auto;
   max-width: 540px;
   width: 100%;
   text-align: center;
   line-height: 1.4;
 }
-
-.form-box form {
+.container .form-box form {
   display: flex;
   flex-direction: column;
 }
-
-.form-box input,
-.form-box textarea {
+.container .form-box form input,
+.container .form-box form textarea {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -71,14 +76,12 @@ body {
   transition: border-color 0.3s;
   color: #242e4c;
 }
-
-.form-box input:focus,
-.form-box textarea:focus {
+.container .form-box form input:focus,
+.container .form-box form textarea:focus {
   border-color: #7985ff;
   color: #7985ff;
 }
-
-.form-box button {
+.container .form-box form button {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   max-width: 380px;
@@ -93,31 +96,17 @@ body {
   transition: background 0.3s;
   margin: 15px auto;
 }
-
-.form-box button:hover {
+.container .form-box form button:hover {
   background: linear-gradient(135deg, #2575fc, #6a11cb);
 }
-
-.error-message {
+.container .form-box form .error-message {
   color: #e74c3c;
   font-size: 12px;
   display: block;
   margin: 0 auto;
 }
-
-.success-message {
+.container .form-box form .success-message {
   color: #2ecc71;
   font-size: 14px;
   margin: 0 auto;
-}
-
-@media (max-width: 650px) {
-  body {
-    height: auto;
-  }
-
-  .container {
-    width: 90%;
-    margin: 25px auto;
-  }
-}
+}/*# sourceMappingURL=style.css.map */
